@@ -19,24 +19,44 @@
         </div>
 
         <div class="row idade">
-            <div class="col-auto d-flex flex-column align-items-center justify-content-center"
-                style="border: 1px solid red; height: 150px;">
-                <div class="text-center" style="border: 1px solid blue;">Informe sua data de nascimento</div>
+            <div class="col-auto d-flex flex-column align-items-center justify-content-center">
+                <div class="text-center">Informe sua data de nascimento</div>
             </div>
-            <div class="col-auto d-flex flex-column align-items-center justify-content-center"
-                style="border: 1px solid red; height: 150px;">
-                <input class="my-1" type="date" id="datanasc" style="border: 1px solid blue;">
+            <div class="col-auto d-flex flex-column align-items-center justify-content-center">
+                <input class="my-1" type="date" id="datanasc">
             </div>
-            <div class="col-auto d-flex flex-column align-items-center justify-content-center"
-                style="border: 1px solid red; height: 150px;">
-                <button type="button" class="btn btn-outline-dark" onclick="calcularIdade()">
+            <div class="col-auto d-flex flex-column align-items-center justify-content-center">
+                <button type="button" class="btn btn-outline-dark" onclick="calcularPercapita()">
                     Enviar
                 </button>
             </div>
-            <div class="col-auto d-flex flex-column align-items-center justify-content-center"
-                style="border: 1px solid red; height: 150px;">
-                <!-- <p class="resultado align-self-center">Resultado</p> -->
-                <p class="valor" id="suaidade"></p>
+        </div>
+
+        <div class="row renda">
+            <div class="col-auto d-flex flex-column align-items-center justify-content-center">
+                <div class="text-center">Informe a renda total familiar</div>
+            </div>
+            <div class="col-auto d-flex flex-column align-items-center justify-content-center">
+                <input class="my-1" type="number" id="renda">
+            </div>
+            <div class="col-auto d-flex flex-column align-items-center justify-content-center">
+                <button type="button" class="btn btn-outline-dark" onclick="calcularPercapita()">
+                    Enviar
+                </button>
+            </div>
+        </div>
+
+        <div class="row moradores">
+            <div class="col-auto d-flex flex-column align-items-center justify-content-center">
+                <div class="text-center">Informe a quantidade de moradores na sua residência</div>
+            </div>
+            <div class="col-auto d-flex flex-column align-items-center justify-content-center">
+                <input class="my-1" type="number" id="moradores">
+            </div>
+            <div class="col-auto d-flex flex-column align-items-center justify-content-center">
+                <button type="button" class="btn btn-outline-dark" onclick="calcularPercapita()">
+                    Enviar
+                </button>
             </div>
         </div>
 
