@@ -2,3 +2,45 @@ main {
     width: 90%;
     margin: auto;
 }
+
+.navbar {
+    font-size: 1.3rem;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.header-barra {
+    background-color: #004a8d;
+    border-top: 3px solid #f7941d;
+    color: #fff;
+    padding: 0;
+    font-size: 0.8rem;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.barra li {
+    color: #fff;
+}
+
+.barra li a {
+    display: block;
+    color: #fff;
+}
+
+.barra li a:hover {
+    color: #fff;
+}
+
+.navbarra {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    border-bottom: 1px solid #dbe0e6;
+}
