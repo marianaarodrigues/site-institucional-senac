@@ -3,17 +3,13 @@ main {
     margin: auto;
 }
 
-.navbar {
-    font-size: 1.3rem;
-}
-
 .logo {
     max-width: 100%;
 }
 
 .header-barra {
     background-color: #004a8d;
-    border-top: 3px solid #f7941d;
+    border-top: 2px solid #f7941d;
     color: #fff;
     padding: 0;
     font-size: 0.8rem;
@@ -38,9 +34,23 @@ main {
     color: #fff;
 }
 
-.navbarra {
+.cabecalho {
     display: flex;
     align-items: center;
     text-align: right;
-    border-bottom: 1px solid #dbe0e6;
+}
+
+.cabecalho li {
+    color: #000;
+    list-style-type: none;
+}
+
+.cabecalho li a {
+    display: block;
+    color: #000;
+    font-size: 1.3rem;
+}
+
+.cabecalho li a:hover {
+    color: #000;
 }
