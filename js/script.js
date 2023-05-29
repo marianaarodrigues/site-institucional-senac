@@ -1,6 +1,4 @@
-function verificarPrematricula() {
-
-    //Calcular idade
+function calcularIdade() {
 
     const hoje = new Date()
     const nasc = new Date(document.getElementById('datanasc').value)
@@ -10,7 +8,10 @@ function verificarPrematricula() {
         anosCompletos--
     }
 
-    //Calcular renda per capita
+    return anosCompletos
+}
+
+function calcularPerCapita() {
 
     let rendaTotal = parseFloat(document.getElementById('renda').value)
     let quantMoradores = parseFloat(document.getElementById('moradores').value)
@@ -21,14 +22,20 @@ function verificarPrematricula() {
     }
     let perCapita = (parseFloat(rendaTotal / quantMoradores)).toFixed(2)
 
-    //Verificar critérios
+    return perCapita
+}
 
-    if (anosCompletos >= 16 && perCapita <= 1.5 * 1320) {
-        mensagem = 'Pré-matrícula aprovada, favor entrar em contato através do número (62) 3333-3333'
+function verificarPrematricula() {
+
+    let idade = calcularIdade()
+    let rendapc = calcularPerCapita()
+
+    if (idade >= 16 && rendapc <= 1.5 * 1320) {
+        mensagem = 'Pré-matrícula aprovada, favor entrar em contato através do número (XX) XXXX-XXXX.'
         document.getElementById('resposta').innerHTML = mensagem
     }
     else {
-        mensagem = 'Você não atende aos critérios do Programa SENAC de Gratuidade'
+        mensagem = 'Você não poderá se matricular, pois não atende aos critérios do Programa SENAC de Gratuidade.'
         document.getElementById('resposta').innerHTML = mensagem
     }
 }

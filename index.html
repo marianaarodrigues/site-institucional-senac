@@ -18,19 +18,19 @@
             <div class="container">
                 <ul class="nav justify-content-end barra">
                     <li class="nav-item">
-                        <a class="nav-link" href="#inscricoes">Quem Somos</a>
+                        <a class="nav-link" href="#quemsomos">Quem Somos</a>
                     </li>
                     |
                     <li class="nav-item">
-                        <a class="nav-link" href="#contato">Cursos</a>
+                        <a class="nav-link" href="#cursos">Cursos</a>
                     </li>
                     |
                     <li class="nav-item">
-                        <a class="nav-link" href="#contato">Localização</a>
+                        <a class="nav-link" href="#localizacao">Localização</a>
                     </li>
                     |
                     <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contatos</a>
+                        <a class="nav-link" href="#contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -38,22 +38,20 @@
 
         <div class="container">
             <div class="row cabecalho-barra">
-                <div class="col-sm-3 d-flex flex-column align-items-start justify-content-center"
-                    style="border: 1px solid red; height: 100px;">
+                <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
                     <h1>
                         <a href="#">
                             <img src="img/logo.png" class="logo"></a>
                     </h1>
                 </div>
-                <div class="col-sm-9 d-flex flex-column align-items-start justify-content-center"
-                    style="border: 1px solid red; height: 100px;">
-                    <ul class="nav fw-medium cabecalho">
+                <div class="col-sm-9 d-flex flex-column align-items-start justify-content-center">
+                    <ul class="nav cabecalho">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Início</a>
+                            <a class="nav-link" href="index.html">Início</a>
                         </li>
                         |
                         <li class="nav-item">
-                            <a class="nav-link" href="pagina1.html">Programa Senac de Gratuidade</a>
+                            <a class="nav-link" href="pages/pagina1.html">Programa Senac de Gratuidade</a>
                         </li>
                     </ul>
                 </div>
@@ -62,10 +60,71 @@
     </header>
 
     <main>
-        <div class="row text-center my-3">
-            <h1>SENAC Goiás - CEP Cora Coralina</h1>
+        <div class="container">
+            <div class="row titulo">
+                <div class="col-sm-12 d-flex flex-column align-items-center justify-content-center">
+                    <h2>Senac Goiás - CEP Cora Coralina</h2>
+                </div>
+            </div>
+
+            <section>
+                <div class="row secoes">
+                    <div class="col-sm-12">
+                        <h5 class="subtitulo" id="quemsomos">Quem Somos</h5>
+                        <p>O Serviço Nacional de Aprendizagem Comercial, Senac, é uma instituição de Educação
+                            Profissional que foi criada em 10 de janeiro de 1946. De direito privado e sem fins
+                            lucrativos, a empresa é mantida por empresários do comércio de bens, serviços e turismo.</p>
+                        <p>A missão do Senac é ‘Educar para o trabalho em atividades de comércio de bens, serviços e
+                            turismo’.</p>
+                        <p>O Senac em Goiás desenvolve suas ações desde 18 de setembro de 1947. Desde a sua criação, a
+                            disponibiliza cursos de educação profissional focados na capacitação e aperfeiçoamento do
+                            cidadão, e sempre aliados ao desenvolvimento do Estado.</p>
+                        <p>Em mais de sete décadas dedicadas à educação, o Senac tem orgulho de ter atendido a população
+                            goiana em diversas modalidades de cursos livres, técnicos, de extensão, de graduação e
+                            pós-graduação, presencial e à distância. A instituição desenvolve também atendimento
+                            específico para empresas, o Atendimento Corporativo, com simpósios, palestras, seminários,
+                            workshops e oficinas customizadas, conforme a necessidade e particularidade de cada
+                            organização.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="row secoes">
+                    <div class="col-sm-12">
+                        <h5 class="subtitulo" id="cursos">Cursos - Programa Senac de Gratuidade</h5>
+                        <ul>
+                            <li>Informática Fundamental</li>
+                            <li>Fundamentos de Python I</li>
+                            <li>Desenvolvedor WEB Front-End</li>
+                            <li>Assistente Administrativo</li>
+                            <li>Operador de Computador</li>
+                            <li>Administrador de Banco de Dados</li>
+                            <li>Programador de Sistemas</li>
+                            <li>Instalador de Sistemas Eletroeletrônicos e CFTV</li>
+                            <li>Técnico em Administração</li>
+                            <li>Técnico em Informática</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-sm-6 d-flex flex-column align-items-start justify-content-center" id="localizacao">
+                    <p>Senac CEP Cora Coralina</p>
+                    <p>Av. Independência, 1002 - St. Leste Vila Nova, Goiânia - GO, 74645-010</p>
+                </div>
+                <div class="col-sm-6 d-flex flex-column align-items-center justify-content-center" id="contato">
+                    <p>Telefone: (62) 3240-2950</p>
+                    <p>atendimento@go.senac.br</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
