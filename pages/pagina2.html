@@ -67,13 +67,17 @@
                 </div>
             </div>
 
-            <div class="row notas" style="border: 1px solid gray; height: 200px;">
-                <div class="col-sm-12 d-flex flex-column align-items-center justify-content-center">
+            <div class="row notas" style="border: 1px solid gray; height: 100px;">
+                <div class="col-auto d-flex flex-column align-items-center justify-content-center">
                     <div class="text-center">Informe as notas da(o) estudante</div>
                 </div>
-                <div class="col-sm-12 d-flex flex-column align-items-center justify-content-center">
+                <div class="col-auto d-flex flex-column align-items-center justify-content-center">
                     <input class="my-1" type="number" id="nota1">
+                </div>
+                <div class="col-auto d-flex flex-column align-items-center justify-content-center">
                     <input class="my-1" type="number" id="nota2">
+                </div>
+                <div class="col-auto d-flex flex-column align-items-center justify-content-center">
                     <input class="my-1" type="number" id="nota3">
                 </div>
             </div>
@@ -82,22 +86,244 @@
                 <div class="col-sm-12 d-flex flex-column align-items-center justify-content-center">
                     <div class="text-center">Informe a presença ou ausência nos dias indicados</div>
                 </div>
-                <div class="col-sm-4 d-flex flex-column align-items-center justify-content-center">
-                    <p>Dia 1</p>
-                </div>
-                <div class="col-sm-4 d-flex flex-column align-items-center justify-content-center">
-                    <input class="my-1" type="radio" id="dia1presente">
-                    <label for="dia1presente">Presente</label>
-                </div>
-                <div class="col-sm-4 d-flex flex-column align-items-center justify-content-center">
-                    <input class="my-1" type="radio" id="dia1ausente">
-                    <label for="dia1ausente">Ausente</label>
+            </div>
+
+            <div>
+                <div class="row row-cols-2 row-cols-lg-6">
+
+                    <!-- DIA 1 -->
+
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    ; padding-left: 5%;">
+                        <p>Dia 1</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia1" id="dia1presente" value="1">
+                            <label class="form-check-label" for="dia1presente">
+                                Presente
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia1" id="dia1ausente" value="0">
+                            <label class="form-check-label" for="dia1ausente">
+                                Ausente
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- DIA 2 -->
+
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    ; padding-left: 5%;">
+                        <p>Dia 2</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia2" id="dia2presente" value="1">
+                            <label class="form-check-label" for="dia2presente">
+                                Presente
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia2" id="dia2ausente" value="0">
+                            <label class="form-check-label" for="dia2ausente">
+                                Ausente
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- DIA 3 -->
+
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    ; padding-left: 5%;">
+                        <p>Dia 3</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia3" id="dia3presente" value="1">
+                            <label class="form-check-label" for="dia3presente">
+                                Presente
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia3" id="dia3ausente">
+                            <label class="form-check-label" for="dia3ausente" value="0">
+                                Ausente
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- DIA 4 -->
+
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    ; padding-left: 5%;">
+                        <p>Dia 4</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia4" id="dia4presente" value="1">
+                            <label class="form-check-label" for="dia4presente">
+                                Presente
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia4" id="dia4ausente" value="0">
+                            <label class="form-check-label" for="dia4ausente">
+                                Ausente
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- DIA 5 -->
+
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    ; padding-left: 5%;">
+                        <p>Dia 5</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia5" id="dia5presente" value="1">
+                            <label class="form-check-label" for="dia5presente">
+                                Presente
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia5" id="dia5ausente" value="0">
+                            <label class="form-check-label" for="dia5ausente">
+                                Ausente
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- DIA 6 -->
+
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    ; padding-left: 5%;">
+                        <p>Dia 6</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia6" id="dia6presente" value="1">
+                            <label class="form-check-label" for="dia6presente">
+                                Presente
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia6" id="dia6ausente" value="0">
+                            <label class="form-check-label" for="dia6ausente">
+                                Ausente
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- DIA 7 -->
+
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    ; padding-left: 5%;">
+                        <p>Dia 7</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia7" id="dia7presente" value="1">
+                            <label class="form-check-label" for="dia7presente">
+                                Presente
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia7" id="dia7ausente" value="0">
+                            <label class="form-check-label" for="dia7ausente">
+                                Ausente
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- DIA 8 -->
+
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    ; padding-left: 5%;">
+                        <p>Dia 8</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia8" id="dia8presente" value="1">
+                            <label class="form-check-label" for="dia8presente">
+                                Presente
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia8" id="dia8ausente" value="0">
+                            <label class="form-check-label" for="dia8ausente">
+                                Ausente
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- DIA 9 -->
+
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    ; padding-left: 5%;">
+                        <p>Dia 9</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia9" id="dia9presente" value="1">
+                            <label class="form-check-label" for="dia9presente">
+                                Presente
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia9" id="dia9ausente" value="0">
+                            <label class="form-check-label" for="dia9ausente">
+                                Ausente
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- DIA 10 -->
+
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    ; padding-left: 5%;">
+                        <p>Dia 10</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia10" id="dia10presente" value="1">
+                            <label class="form-check-label" for="dia10presente">
+                                Presente
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia10" id="dia10ausente" value="0">
+                            <label class="form-check-label" for="dia10ausente">
+                                Ausente
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- DIA 11 -->
+
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    ; padding-left: 5%;">
+                        <p>Dia 11</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia11" id="dia11presente" value="1">
+                            <label class="form-check-label" for="dia11presente">
+                                Presente
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia11" id="dia11ausente" value="0">
+                            <label class="form-check-label" for="dia11ausente">
+                                Ausente
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- DIA 12 -->
+
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    ; padding-left: 5%;">
+                        <p>Dia 12</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia12" id="dia12presente" value="1">
+                            <label class="form-check-label" for="dia12presente">
+                                Presente
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dia12" id="dia12ausente" value="0">
+                            <label class="form-check-label" for="dia12ausente">
+                                Ausente
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-sm-12 d-flex flex-column align-items-end justify-content-center">
-                    <button type="button" class="btn btn-outline-dark" onclick="verificarPrematricula()">
+                    <button type="button" class="btn btn-outline-dark" onclick="verificarAprovacao()">
                         Enviar
                     </button>
                 </div>
