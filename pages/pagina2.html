@@ -63,54 +63,38 @@
         <div class="container">
             <div class="row titulo">
                 <div class="col-sm-12 d-flex flex-column align-items-center justify-content-center">
-                    <h2>Programa SENAC de Gratuidade (PSG)</h2>
+                    <h2>Verificação da aprovação ou reprovação de estudantes</h2>
                 </div>
             </div>
-            <div class="row programa">
-                <div class="col-sm-12 d-flex flex-column align-items-start justify-content-center">
-                    <p><strong>O que é o PSG.</strong></p>
-                    <p>Firmado em 22 de julho de 2008 entre o Ministério da Educação, o Ministério do Trabalho, o
-                        Ministério da Fazenda, a Confederação Nacional do Comércio de Bens, Serviços e Turismo - CNC e o
-                        Senac, e ratificado pelo Decreto nº 6.633, de 5 de novembro de 2008 , o Programa Senac de
-                        Gratuidade – PSG tem por objetivo garantir o acesso à educação profissional de qualidade para
-                        pessoas cuja renda familiar mensal per capita não ultrapasse dois salários mínimos.</p>
-                    <p>Pelo acordo celebrado, o Senac investe, desde 2014, 66,67% de sua Receita Líquida de Contribuição
-                        nesse importante programa de educação inclusiva.
-                    </p>
-                    <p><strong>Critérios para participar do programa.</strong></p>
-                    <p>Pode realizar a matrícula nos cursos de qualificação do PSG quem atende aos seguintes critérios:
-                    </p>
-                    <ul>
-                        <li>Idade mínima: 16 anos completos</li>
-                        <li>Renda per capita familiar máxima: 1,5 salário mínimo</li>
-                    </ul>
-                    <p><strong>Verifique abaixo se você pode participar do programa.</strong></p>
+
+            <div class="row notas" style="border: 1px solid gray; height: 200px;">
+                <div class="col-sm-12 d-flex flex-column align-items-center justify-content-center">
+                    <div class="text-center">Informe as notas da(o) estudante</div>
+                </div>
+                <div class="col-sm-12 d-flex flex-column align-items-center justify-content-center">
+                    <input class="my-1" type="number" id="nota1">
+                    <input class="my-1" type="number" id="nota2">
+                    <input class="my-1" type="number" id="nota3">
                 </div>
             </div>
-            <div class="row idade">
-                <div class="col-sm-6 d-flex flex-column align-items-end justify-content-center">
-                    <div class="text-center">Informe sua data de nascimento</div>
+
+            <div class="row presenca" style="border: 1px solid gray;">
+                <div class="col-sm-12 d-flex flex-column align-items-center justify-content-center">
+                    <div class="text-center">Informe a presença ou ausência nos dias indicados</div>
                 </div>
-                <div class="col-sm-6 d-flex flex-column align-items-start justify-content-center">
-                    <input class="my-1" type="date" id="datanasc">
+                <div class="col-sm-4 d-flex flex-column align-items-center justify-content-center">
+                    <p>Dia 1</p>
                 </div>
-            </div>
-            <div class="row renda">
-                <div class="col-sm-6 d-flex flex-column align-items-end justify-content-center">
-                    <div class="text-center">Informe a renda total familiar</div>
+                <div class="col-sm-4 d-flex flex-column align-items-center justify-content-center">
+                    <input class="my-1" type="radio" id="dia1presente">
+                    <label for="dia1presente">Presente</label>
                 </div>
-                <div class="col-sm-6 d-flex flex-column align-items-start justify-content-center">
-                    <input class="my-1" type="number" id="renda">
-                </div>
-            </div>
-            <div class="row moradores">
-                <div class="col-sm-6 d-flex flex-column align-items-end justify-content-center">
-                    <div class="text-center">Informe a quantidade de moradores na sua residência</div>
-                </div>
-                <div class="col-sm-6 d-flex flex-column align-items-start justify-content-center">
-                    <input class="my-1" type="number" id="moradores">
+                <div class="col-sm-4 d-flex flex-column align-items-center justify-content-center">
+                    <input class="my-1" type="radio" id="dia1ausente">
+                    <label for="dia1ausente">Ausente</label>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-sm-12 d-flex flex-column align-items-end justify-content-center">
                     <button type="button" class="btn btn-outline-dark" onclick="verificarPrematricula()">
