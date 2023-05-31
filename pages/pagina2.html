@@ -67,52 +67,68 @@
                 </div>
             </div>
 
-            <div class="row notas" style="border: 1px solid gray; height: 100px;">
-                <div class="col-auto d-flex flex-column align-items-center justify-content-center">
-                    <div class="text-center">Informe as notas da(o) estudante</div>
-                </div>
-                <div class="col-auto d-flex flex-column align-items-center justify-content-center">
-                    <input class="my-1" type="number" id="nota1">
-                </div>
-                <div class="col-auto d-flex flex-column align-items-center justify-content-center">
-                    <input class="my-1" type="number" id="nota2">
-                </div>
-                <div class="col-auto d-flex flex-column align-items-center justify-content-center">
-                    <input class="my-1" type="number" id="nota3">
+            <div class="row aprovacao">
+                <div class="col-sm-12 d-flex flex-column align-items-start justify-content-center">
+                    <p>Esta página tem o objetivo de verificar se um(a) estudante está aprovado(a) com base em sua média
+                        de notas e sua frequência.</p>
+                    <p>Os critérios de aprovação são os seguintes:
+                    </p>
+                    <ul>
+                        <li>Nota maior ou igual a 6.0</li>
+                        <li>Frequência maior ou igual a 75%</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="row presenca" style="border: 1px solid gray;">
-                <div class="col-sm-12 d-flex flex-column align-items-center justify-content-center">
-                    <div class="text-center">Informe a presença ou ausência nos dias indicados</div>
+            <div class="row notas" style="border: 1px solid #dee2e6; min-height: 100px; margin-bottom: 20px;">
+                <div class="col-sm-3 d-flex flex-column align-items-start justify-content-center">
+                    <div>Informe as notas do(a) estudante:</div>
+                </div>
+                <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                    <!-- <input class="my-1" type="number" id="nota1"> -->
+                    <input type="number" class="form-control my-1" id="nota1" placeholder="Primeira nota">
+                </div>
+                <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                    <input type="number" class="form-control my-1" id="nota2" placeholder="Segunda nota">
+                </div>
+                <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                    <input type="number" class="form-control my-1" id="nota3" placeholder="Terceira nota">
+                </div>
+            </div>
+
+            <div class="row presenca" style="border: 1px solid #dee2e6; height: 100px;">
+                <div class="col-sm-12 d-flex flex-column align-items-start justify-content-center">
+                    <div class="text-center">Informe a presença ou ausência nos dias indicados:</div>
                 </div>
             </div>
 
             <div>
-                <div class="row row-cols-2 row-cols-lg-6">
+                <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3">
 
                     <!-- DIA 1 -->
 
-                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
-                    ; padding-left: 5%;">
-                        <p>Dia 1</p>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="dia1" id="dia1presente" value="1">
-                            <label class="form-check-label" for="dia1presente">
-                                Presente
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="dia1" id="dia1ausente" value="0">
-                            <label class="form-check-label" for="dia1ausente">
-                                Ausente
-                            </label>
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid #dee2e6
+                    ; padding: 1% 0 1% 5%;">
+                        <div class="p-3">
+                            <p>Dia 1</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="dia1" id="dia1presente" value="1">
+                                <label class="form-check-label" for="dia1presente">
+                                    Presente
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="dia1" id="dia1ausente" value="0">
+                                <label class="form-check-label" for="dia1ausente">
+                                    Ausente
+                                </label>
+                            </div>
                         </div>
                     </div>
 
                     <!-- DIA 2 -->
 
-                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid #dee2e6
                     ; padding-left: 5%;">
                         <p>Dia 2</p>
                         <div class="form-check">
@@ -131,7 +147,7 @@
 
                     <!-- DIA 3 -->
 
-                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid #dee2e6
                     ; padding-left: 5%;">
                         <p>Dia 3</p>
                         <div class="form-check">
@@ -150,7 +166,7 @@
 
                     <!-- DIA 4 -->
 
-                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid #dee2e6
                     ; padding-left: 5%;">
                         <p>Dia 4</p>
                         <div class="form-check">
@@ -169,7 +185,7 @@
 
                     <!-- DIA 5 -->
 
-                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid #dee2e6
                     ; padding-left: 5%;">
                         <p>Dia 5</p>
                         <div class="form-check">
@@ -188,7 +204,7 @@
 
                     <!-- DIA 6 -->
 
-                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid #dee2e6
                     ; padding-left: 5%;">
                         <p>Dia 6</p>
                         <div class="form-check">
@@ -207,7 +223,7 @@
 
                     <!-- DIA 7 -->
 
-                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid #dee2e6
                     ; padding-left: 5%;">
                         <p>Dia 7</p>
                         <div class="form-check">
@@ -226,7 +242,7 @@
 
                     <!-- DIA 8 -->
 
-                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid #dee2e6
                     ; padding-left: 5%;">
                         <p>Dia 8</p>
                         <div class="form-check">
@@ -245,7 +261,7 @@
 
                     <!-- DIA 9 -->
 
-                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid #dee2e6
                     ; padding-left: 5%;">
                         <p>Dia 9</p>
                         <div class="form-check">
@@ -264,7 +280,7 @@
 
                     <!-- DIA 10 -->
 
-                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid #dee2e6
                     ; padding-left: 5%;">
                         <p>Dia 10</p>
                         <div class="form-check">
@@ -283,7 +299,7 @@
 
                     <!-- DIA 11 -->
 
-                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid #dee2e6
                     ; padding-left: 5%;">
                         <p>Dia 11</p>
                         <div class="form-check">
@@ -302,7 +318,7 @@
 
                     <!-- DIA 12 -->
 
-                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid gray
+                    <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid #dee2e6
                     ; padding-left: 5%;">
                         <p>Dia 12</p>
                         <div class="form-check">
@@ -330,7 +346,7 @@
             </div>
             <div class="row resultado">
                 <div class="col-sm-12 d-flex flex-column align-items-center justify-content-center">
-                    <div id="resposta"></div>
+                    <div id="resposta">Informe os dados acima para verificar se o(a) estudante foi reprovado(a).</div>
                 </div>
             </div>
         </div>

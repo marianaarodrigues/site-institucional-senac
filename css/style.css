@@ -114,14 +114,16 @@ footer {
     padding-left: 50px;
 }
 
-.programa {
+.programa,
+.aprovacao {
     text-align: justify;
     background-color: #FEE691;
     padding: 10px;
     margin-bottom: 30px;
 }
 
-.programa p {
+.programa p,
+.aprovacao {
     margin-bottom: 15px;
     line-height: 2;
 }
