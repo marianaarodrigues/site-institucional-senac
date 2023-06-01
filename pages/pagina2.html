@@ -18,11 +18,7 @@
             <div class="container">
                 <ul class="nav justify-content-end barra">
                     <li class="nav-item">
-                        <a class="nav-link" href="#quemsomos">Quem Somos</a>
-                    </li>
-                    |
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cursos">Cursos</a>
+                        <a class="nav-link" href="#verificar">Verificar aprovação</a>
                     </li>
                     |
                     <li class="nav-item">
@@ -53,6 +49,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="pagina1.html">Programa Senac de Gratuidade</a>
                         </li>
+                        |
+                        <li class="nav-item">
+                            <a class="nav-link" href="pagina2.html">Verificação de aprovação</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -61,7 +61,7 @@
 
     <main>
         <div class="container">
-            <div class="row titulo">
+            <div class="row titulo" id="verificar">
                 <div class="col-sm-12 d-flex flex-column align-items-center justify-content-center">
                     <h2>Verificação da aprovação ou reprovação de estudantes</h2>
                 </div>
@@ -224,20 +224,23 @@
                     <!-- DIA 7 -->
 
                     <div class="col d-flex flex-column align-items-start justify-content-center" style="border: 1px solid #dee2e6
-                    ; padding-left: 5%;">
-                        <p>Dia 7</p>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="dia7" id="dia7presente" value="1">
-                            <label class="form-check-label" for="dia7presente">
-                                Presente
-                            </label>
+                    ; padding: 1% 0 1% 5%;">
+                        <div class="p-3">
+                            <p>Dia 7</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="dia7" id="dia7presente" value="1">
+                                <label class="form-check-label" for="dia7presente">
+                                    Presente
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="dia7" id="dia7ausente" value="0">
+                                <label class="form-check-label" for="dia7ausente">
+                                    Ausente
+                                </label>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="dia7" id="dia7ausente" value="0">
-                            <label class="form-check-label" for="dia7ausente">
-                                Ausente
-                            </label>
-                        </div>
+
                     </div>
 
                     <!-- DIA 8 -->
@@ -338,7 +341,7 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-12 d-flex flex-column align-items-end justify-content-center">
+                <div class="col-sm-12 d-flex flex-column align-items-end justify-content-center py-3">
                     <button type="button" class="btn btn-outline-dark" onclick="verificarAprovacao()">
                         Enviar
                     </button>
