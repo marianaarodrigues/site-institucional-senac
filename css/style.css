@@ -73,6 +73,7 @@ main {
 }
 
 .subtitulo {
+    color: #004a8d;
     margin-bottom: 20px;
 }
 
@@ -96,13 +97,21 @@ main {
     padding-left: 10px;
 }
 
+.table {
+    font-size: 80%;
+}
+
+.tablehead {
+    background-color: rgb(217, 217, 217);
+}
+
 footer {
     background-color: #004a8d;
 }
 
 .footer-row {
     color: #fff;
-    min-height: 250px;
+    min-height: 280px;
 }
 
 
